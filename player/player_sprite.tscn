@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/topdown_controller/player/player.tscn" id="1_base"]
+[ext_resource type="Script" path="res://addons/topdown_controller/visual/camera_facing_sprite_3d.gd" id="2_sprite"]
+
+[node name="Player" instance=ExtResource("1_base")]
+
+[node name="Sprite" type="AnimatedSprite3D" parent="Visual"]
+pixel_size = 0.03
+shaded = true
+double_sided = true
+alpha_cut = 1
+texture_filter = 0
+script = ExtResource("2_sprite")

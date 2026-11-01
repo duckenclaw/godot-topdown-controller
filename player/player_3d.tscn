@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/topdown_controller/player/player.tscn" id="1_base"]
+[ext_resource type="PackedScene" path="res://addons/topdown_controller/player/mannequin/mannequin.tscn" id="2_model"]
+
+[node name="Player" instance=ExtResource("1_base")]
+
+[node name="Mannequin" parent="Visual" instance=ExtResource("2_model")]
